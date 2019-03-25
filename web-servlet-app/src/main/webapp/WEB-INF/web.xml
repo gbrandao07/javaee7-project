@@ -4,14 +4,4 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  <servlet>
-  	<servlet-name>ServletEJBClient</servlet-name>
-  	<display-name>ServletEJBClient</display-name>
-  	<description></description>
-  	<servlet-class>br.com.javaee7.servlet.ServletEJBClient</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>ServletEJBClient</servlet-name>
-  	<url-pattern>/ServletEJBClient</url-pattern>
-  </servlet-mapping>
 </web-app>

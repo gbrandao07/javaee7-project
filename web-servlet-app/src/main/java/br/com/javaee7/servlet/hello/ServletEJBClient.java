@@ -1,4 +1,4 @@
-package br.com.javaee7.servlet;
+package br.com.javaee7.servlet.hello;
 
 import java.io.IOException;
 
