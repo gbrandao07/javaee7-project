@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.javaee7.ear</groupId>
+	<artifactId>enterprise-app</artifactId>
+	<packaging>ear</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>ear</name>
+
+	<!-- POM que vai gerar um EAR das dependencias declaradas abaixo -->
+	<dependencies>
+		 
+		 <dependency>
+			<groupId>br.com.javaee7.ejb</groupId>
+			<artifactId>ejb</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>ejb</type>
+         </dependency>
+
+         <dependency>
+            <groupId>br.com.javaee7.webservletapp</groupId>
+			<artifactId>web-servlet-app</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+            <type>war</type>
+            <scope>compile</scope>
+         </dependency>
+		 
+	</dependencies>
+	
+</project>
