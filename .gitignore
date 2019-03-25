@@ -45,5 +45,6 @@ buildNumber.properties
 web-servlet-app/target/*
 ear/target/*
 ejb/target/*
+web-jsp-servlet-app/target/*
 
 */target/*

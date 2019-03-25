@@ -12,6 +12,7 @@
    <modules>
       <module>ejb</module>
       <module>web-servlet-app</module>
+	  <module>web-jsp-servlet-app</module>
 	  <module>ear</module>
    </modules>
 
