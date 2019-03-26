@@ -17,6 +17,7 @@
 	  <module>web-jsf-app</module>
 	  <module>websocket-app</module>
 	  <module>security-app</module>
+	  <module>webfilter-app</module>
 	  <module>ear</module>
    </modules>
 
