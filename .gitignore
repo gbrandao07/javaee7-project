@@ -46,5 +46,6 @@ web-servlet-app/target/*
 ear/target/*
 ejb/target/*
 web-jsp-servlet-app/target/*
+rest/target/*
 
 */target/*
