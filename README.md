@@ -10,6 +10,7 @@ Possui servlet's que injetam os ejb's descritos acima. É exercitado o ciclo de 
 Exemplos de url's para exercitar a execução do projeto:
 
 http://localhost:8180/web-servlet-app/EjbClient?name=Usuario
+
 http://localhost:8180/web-servlet-app/FormServlet
 
 # web-jsp-servlet-app
@@ -17,7 +18,9 @@ Possui servlet's com jsp's. É exercitado a convivência entre jsp e servlet, co
 Exemplos de url's para exercitar a execução do projeto:
 
 http://localhost:8180/web-jsp-servlet-app/bean_usage.jsp?urlParam=teste
+
 http://localhost:8180/web-jsp-servlet-app/form.jsp
+
 http://localhost:8180/web-jsp-servlet-app/jsp_redirect.jsp?nome=Gustavo%20luca%20brandao&idade=123&peso=1111
 
 # rest
