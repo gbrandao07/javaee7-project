@@ -9,6 +9,12 @@ import javax.persistence.PersistenceContext;
 import br.com.javaee7.jpa.ejb.DatabasePopulatorLocal;
 import br.com.javaee7.jpa.entity.Car;
 
+/**
+ * Singleton Session Bean com o objetivo de popular a base no startup da aplicacao 
+ * 
+ * @author gustavo
+ *
+ */
 @Singleton
 @Startup
 public class DatabasePopulatorImpl implements DatabasePopulatorLocal {

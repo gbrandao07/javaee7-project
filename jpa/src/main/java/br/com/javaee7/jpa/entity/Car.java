@@ -5,11 +5,16 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * 
+ * @author gustavo
+ *
+ */
 @Entity
 public class Car {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // baseado na coluna de autoincrement do banco
 	private Long id;
 
 	private String name;
