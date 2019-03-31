@@ -18,6 +18,7 @@
 	  <module>websocket-app</module>
 	  <module>security-app</module>
 	  <module>webfilter-app</module>
+	  <module>jpa</module>
 	  <module>ear</module>
    </modules>
 
