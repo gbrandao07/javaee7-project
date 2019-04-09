@@ -142,3 +142,10 @@ Setup antes de realizar o deploy:
   ```
   Referência: https://lucasmarques.me/mysql-wildfly-datasource/
 
+## web-cdi-app
+Um webapp que exercita a injeção de dependências com o CDI.
+
+URL para ver o resultado da execução do projeto:
+```
+http://localhost:8180/web-cdi-app/GoldilocksServlet
+```
