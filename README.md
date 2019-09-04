@@ -185,7 +185,7 @@ Um webapp para exercitar a especificação JMS (parte de produtor) e EJB (Messag
 A partir de uma requisição get a partir de uma servlet, uma mensagem é disparada a uma fila. A mensagem, por sua vez, é consumida por um MessageDriven bean e logada no console. Exemplo:
 
 ```
-20:30:19,044 INFO  [stdout] (Thread-0 (ActiveMQ-client-global-threads)) Mensagem recebida:
+20:30:19,044 INFO  [stdout] (Thread-0 (ActiveMQ-client-global-threads)) Mensagem recebida: SUA_MENSAGEM_AQUI
 ```
 
 As filas e factories JMS devem ser criadas e configuradas no servidor de aplicação.
