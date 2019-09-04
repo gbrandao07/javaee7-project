@@ -178,3 +178,22 @@ URL para ver o resultado da execução do projeto:
 ```
 http://localhost:8180/web-concurrency-api-app/task
 ```
+
+## web-jms-ejb-app
+Um webapp para exercitar a especificação JMS (parte de produtor) e EJB (MessageDriven beans).
+
+A partir de uma requisição get a partir de uma servlet, uma mensagem é disparada a uma fila. A mensagem, por sua vez, é consumida por um MessageDriven bean e logada no console.
+
+As filas e factories JMS devem ser criadas e configuradas no servidor de aplicação.
+Tutorial para o Wildfly: https://gianlucacosta.info/blog/wildfly-jms-tutorial
+
+Após a configuração ter sido realizada, efetuar o deploy da aplicação no modo standalone-full:
+
+```
+standalone.bat -c standalone-full.xml
+```
+
+URL para disparar mensagens:
+```
+http://localhost:8180/web-jms-ejb-app/producer?message=SUA_MENSAGEM_AQUI
+```
