@@ -97,6 +97,14 @@
             <scope>compile</scope>
          </dependency>
 		 
+		 <dependency>
+            <groupId>br.com.javaee7.jms</groupId>
+			<artifactId>web-jms-ejb-app</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+            <type>war</type>
+            <scope>compile</scope>
+         </dependency>
+		 
 	</dependencies>
 	
 </project>

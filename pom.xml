@@ -21,6 +21,7 @@
 	  <module>jpa</module>
 	  <module>web-cdi-app</module>
 	  <module>web-concurrency-api-app</module>
+	  <module>web-jms-ejb-app</module>
 	  <module>ear</module>
    </modules>
 
