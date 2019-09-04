@@ -182,7 +182,11 @@ http://localhost:8180/web-concurrency-api-app/task
 ## web-jms-ejb-app
 Um webapp para exercitar a especificação JMS (parte de produtor) e EJB (MessageDriven beans).
 
-A partir de uma requisição get a partir de uma servlet, uma mensagem é disparada a uma fila. A mensagem, por sua vez, é consumida por um MessageDriven bean e logada no console.
+A partir de uma requisição get a partir de uma servlet, uma mensagem é disparada a uma fila. A mensagem, por sua vez, é consumida por um MessageDriven bean e logada no console. Exemplo:
+
+```
+20:30:19,044 INFO  [stdout] (Thread-0 (ActiveMQ-client-global-threads)) Mensagem recebida:
+```
 
 As filas e factories JMS devem ser criadas e configuradas no servidor de aplicação.
 Tutorial para o Wildfly: https://gianlucacosta.info/blog/wildfly-jms-tutorial
@@ -197,3 +201,4 @@ URL para disparar mensagens:
 ```
 http://localhost:8180/web-jms-ejb-app/producer?message=SUA_MENSAGEM_AQUI
 ```
+
