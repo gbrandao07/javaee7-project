@@ -152,9 +152,27 @@ http://localhost:8180/web-cdi-app/GoldilocksServlet
 
 ## web-concurrency-api-app
 Um webapp que exercita a Concurrency API.
+
 Utiliza um ManagedExecutorService provido pelo container e dispara algumas tasks para submissão.
-O resultado da submissão é exibido no console do servidor de aplicação.
+
 Utiliza CDI para encapsular em um produtor o lookup do ManagedExecutorService.
+
+O resultado da submissão é exibido no console do servidor de aplicação. Exemplo:
+
+```
+2019-09-04 19:34:35,425 INFO  [stdout] (EE-ManagedExecutorService-default-Thread-7) Executando callable 1 na thread: EE-ManagedExecutorService-default-Thread-7
+
+2019-09-04 19:34:35,431 INFO  [stdout] (EE-ManagedExecutorService-default-Thread-8) Executando callable 2 na thread: EE-ManagedExecutorService-default-Thread-8
+
+2019-09-04 19:34:35,435 INFO  [stdout] (EE-ManagedExecutorService-default-Thread-2) Executando callable 3 na thread: EE-ManagedExecutorService-default-Thread-2
+
+2019-09-04 19:34:35,440 INFO  [stdout] (default task-1) Sucesso no callable 1
+
+2019-09-04 19:34:35,441 INFO  [stdout] (default task-1) Sucesso no callable 2
+
+2019-09-04 19:34:35,444 INFO  [stdout] (default task-1) Sucesso no callable 3
+
+```
 
 URL para ver o resultado da execução do projeto:
 ```
