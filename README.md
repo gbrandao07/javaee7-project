@@ -149,3 +149,14 @@ URL para ver o resultado da execução do projeto:
 ```
 http://localhost:8180/web-cdi-app/GoldilocksServlet
 ```
+
+## web-concurrency-api-app
+Um webapp que exercita a Concurrency API.
+Utiliza um ManagedExecutorService provido pelo container e dispara algumas tasks para submissão.
+O resultado da submissão é exibido no console do servidor de aplicação.
+Utiliza CDI para encapsular em um produtor o lookup do ManagedExecutorService.
+
+URL para ver o resultado da execução do projeto:
+```
+http://localhost:8180/web-concurrency-api-app/task
+```
