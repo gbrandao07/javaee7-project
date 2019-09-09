@@ -113,7 +113,7 @@ Setup antes de realizar o deploy:
     </module>
     ```
   - Colar o jar do driver "mysql-connector-java-5.1.42.jar"
-- Editar o arquivo wildfly-12.0.0.Final\standalone\configuration\standalone.xml na seção "datasources", inserir:
+- Editar o arquivo wildfly\standalone\configuration\standalone.xml na seção "datasources", inserir:
   ```
   <datasource jta="true" jndi-name="java:jboss/datasources/testejavaee7-ds" pool-name="testejavaee7" enabled="true" use-java-context="true" spy="true" use-ccm="true">
       <connection-url>jdbc:mysql://localhost:3306/testejavaee7</connection-url>
@@ -192,10 +192,11 @@ As filas e factories JMS devem ser criadas e configuradas no servidor de aplica�
 Tutorial para o Wildfly: https://gianlucacosta.info/blog/wildfly-jms-tutorial
 
 Dica: caso não queira seguir o tutorial configurando pelo console, é possível executar pela linha de comando:
-1 - wildfly\bin\jbosscli.bat
-2 - connect 
-3 - Criar fila: jms-queue add --queue-address=myQueue --entries=java:/queues/myQueue
-4 - Criar a factory: /subsystem=messaging-activemq/server=default/connection-factory=MyConnectionFactory:add(entries=[java:/myJmsTest/MyConnectionFactory],connectors=[in-vm])
+
+- wildfly\bin\jbosscli.bat
+- connect 
+- Criar fila: jms-queue add --queue-address=myQueue --entries=java:/queues/myQueue
+- Criar a factory: /subsystem=messaging-activemq/server=default/connection-factory=MyConnectionFactory:add(entries=[java:/myJmsTest/MyConnectionFactory],connectors=[in-vm])
 
 
 Após a configuração ter sido realizada, efetuar o deploy da aplicação no modo standalone-full:
