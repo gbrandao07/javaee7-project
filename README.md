@@ -191,6 +191,13 @@ A partir de uma requisição get a partir de uma servlet, uma mensagem é dispar
 As filas e factories JMS devem ser criadas e configuradas no servidor de aplicação.
 Tutorial para o Wildfly: https://gianlucacosta.info/blog/wildfly-jms-tutorial
 
+Dica: caso não queira seguir o tutorial configurando pelo console, é possível executar pela linha de comando:
+1 - wildfly\bin\jbosscli.bat
+2 - connect 
+3 - Criar fila: jms-queue add --queue-address=myQueue --entries=java:/queues/myQueue
+4 - Criar a factory: /subsystem=messaging-activemq/server=default/connection-factory=MyConnectionFactory:add(entries=[java:/myJmsTest/MyConnectionFactory],connectors=[in-vm])
+
+
 Após a configuração ter sido realizada, efetuar o deploy da aplicação no modo standalone-full:
 
 ```
@@ -202,3 +209,12 @@ URL para disparar mensagens:
 http://localhost:8180/web-jms-ejb-app/producer?message=SUA_MENSAGEM_AQUI
 ```
 
+## web-batch-app
+Um webapp para exercitar a nova Batch API do Java EE 7.
+
+URL para disparar um novo job:
+```
+http://localhost:8080/web-batch-app/batch
+```
+
+Após a requisição, ir verificando no console o progresso do job. Ao final será impressa uma página http com as informações da execução.
