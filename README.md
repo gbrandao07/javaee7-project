@@ -195,7 +195,7 @@ Dica: caso não queira seguir o tutorial configurando pelo console, é possível
 
 - wildfly\bin\jbosscli.bat
 - connect 
-- Criar fila: jms-queue add --queue-address=myQueue --entries=java:/queues/myQueue
+- Criar fila: jms-queue add --queue-address=myQueue --entries=java:/queue/myQueue
 - Criar a factory: /subsystem=messaging-activemq/server=default/connection-factory=MyConnectionFactory:add(entries=[java:/myJmsTest/MyConnectionFactory],connectors=[in-vm])
 
 
