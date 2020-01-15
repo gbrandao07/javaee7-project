@@ -1,4 +1,15 @@
 # javaee7-project
+
+Registro dos meus estudos para a obtenção da certificação Oracle Java EE 7 Application Developer (exame 1Z0-900).
+Link> https://www.youracclaim.com/badges/80016888-2577-4745-98da-4b54cf8085c2/
+Deixo o projeto disponível a quem possa interessar em aprendar mais sobre a especificação.
+
+Pré-requisitos:
+JDK8 ou superior
+Wildfly 15 ou superior
+Maven 3 ou superior
+
+
 Um projeto simples que visa exercitar os recursos disponíveis no Java EE 7. 
 Não é uma solução e não possui regras de negócio. O foco é apenas exercitar o setup da criação do projeto e algumas das funcionalidades disponibilizadas pela especificação.
 
