@@ -20,8 +20,9 @@ Um projeto simples que visa exercitar os recursos disponíveis no Java EE 7.
 Não é uma solução e não possui regras de negócio. O foco é apenas exercitar o setup da criação do projeto e algumas das funcionalidades disponibilizadas pela especificação.
 
 
+
 ## ejb-hello-world
-Possui implementações de EJB's. Será utilizado por um projeto web cliente, o web-servlet-app.
+Possui implementações de EJB's. Será utilizado por um projeto web cliente, servlet-hello-world-war.
 
 
 ## servlet-hello-world-war
