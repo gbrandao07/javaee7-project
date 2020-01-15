@@ -16,7 +16,7 @@ Maven 3 ou superior
 ```
 
 
-Um projeto simples que visa exercitar os recursos disponíveis no Java EE 7. 
+Um conjunto de projetos simples que visa exercitar os recursos disponíveis no Java EE 7. 
 Não é uma solução e não possui regras de negócio. O foco é apenas exercitar o setup da criação do projeto e algumas das funcionalidades disponibilizadas pela especificação.
 
 
