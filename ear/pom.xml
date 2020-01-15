@@ -12,14 +12,14 @@
 		 
 		 <dependency>
 			<groupId>br.com.javaee7.ejb</groupId>
-			<artifactId>ejb</artifactId>
+			 <artifactId>ejb-hello-world</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 			<type>ejb</type>
          </dependency>
 
          <dependency>
             <groupId>br.com.javaee7.webservletapp</groupId>
-			<artifactId>web-servlet-app</artifactId>
+			<artifactId>servlet-hello-world-war</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
             <type>war</type>
             <scope>compile</scope>
@@ -27,7 +27,7 @@
 		 
 		 <dependency>
             <groupId>br.com.javaee7.webjspservletapp</groupId>
-			<artifactId>web-jsp-servlet-app</artifactId>
+			<artifactId>jsp-servlet-hello-world-war</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
             <type>war</type>
             <scope>compile</scope>
@@ -35,7 +35,7 @@
 		 
 		 <dependency>
             <groupId>br.com.javaee7.rest</groupId>
-			<artifactId>rest</artifactId>
+			<artifactId>jaxrs-hello-world-war</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
             <type>war</type>
             <scope>compile</scope>
@@ -43,7 +43,7 @@
 		 
 		 <dependency>
             <groupId>br.com.javaee7.webjsfapp</groupId>
-			<artifactId>web-jsf-app</artifactId>
+			<artifactId>jsf-hello-world-war</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
             <type>war</type>
             <scope>compile</scope>
@@ -51,7 +51,7 @@
 		 
 		 <dependency>
             <groupId>br.com.javaee7.websocket</groupId>
-			<artifactId>websocket-app</artifactId>
+			<artifactId>websocket-hello-world-war</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
             <type>war</type>
             <scope>compile</scope>
@@ -59,7 +59,7 @@
 		 
 		 <dependency>
             <groupId>br.com.javaee7.security</groupId>
-			<artifactId>security-app</artifactId>
+			<artifactId>security-hello-world-war</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
             <type>war</type>
             <scope>compile</scope>
@@ -67,7 +67,7 @@
 		 
 		 <dependency>
             <groupId>br.com.javaee7.webfilter</groupId>
-			<artifactId>webfilter-app</artifactId>
+			<artifactId>webfilter-hello-world-war</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
             <type>war</type>
             <scope>compile</scope>
@@ -75,7 +75,7 @@
 
 		 <dependency>
             <groupId>br.com.javaee7.jpa</groupId>
-			<artifactId>jpa</artifactId>
+			<artifactId>jpa-hello-world-ejb</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
             <type>ejb</type>
             <scope>compile</scope>
@@ -83,7 +83,7 @@
 		 
 		 <dependency>
             <groupId>br.com.javaee7.cdi</groupId>
-			<artifactId>web-cdi-app</artifactId>
+			<artifactId>cdi-hello-world-war</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
             <type>war</type>
             <scope>compile</scope>
@@ -91,7 +91,7 @@
 		 
 		 <dependency>
             <groupId>br.com.javaee7.concurrency</groupId>
-			<artifactId>web-concurrency-api-app</artifactId>
+			<artifactId>concurrency-hello-world-war</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
             <type>war</type>
             <scope>compile</scope>
@@ -99,7 +99,7 @@
 		 
 		 <dependency>
             <groupId>br.com.javaee7.jms</groupId>
-			<artifactId>web-jms-ejb-app</artifactId>
+			<artifactId>jms-hello-world-war</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
             <type>war</type>
             <scope>compile</scope>
@@ -107,14 +107,20 @@
 		 
 		 <dependency>
             <groupId>br.com.javaee7.batch</groupId>
-			<artifactId>web-batch-app</artifactId>
+			<artifactId>batch-hello-world-war</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
             <type>war</type>
             <scope>compile</scope>
          </dependency>
 		 
-		 
-		 
+		 <dependency>
+			<groupId>br.com.javaee7.soap</groupId>
+			<artifactId>jaxws-hello-world-war</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+            <type>war</type>
+            <scope>compile</scope>
+         </dependency>
+					 
 	</dependencies>
 	
 </project>

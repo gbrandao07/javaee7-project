@@ -10,19 +10,20 @@
 
    <!-- Pom agregador apenas. Serve para construir os outros projetos em cadeia declarados como modulos -->
    <modules>
-      <module>ejb</module>
-      <module>web-servlet-app</module>
-	  <module>web-jsp-servlet-app</module>
-	  <module>rest</module>
-	  <module>web-jsf-app</module>
-	  <module>websocket-app</module>
-	  <module>security-app</module>
-	  <module>webfilter-app</module>
-	  <module>jpa</module>
-	  <module>web-cdi-app</module>
-	  <module>web-concurrency-api-app</module>
-	  <module>web-jms-ejb-app</module>
-	  <module>web-batch-app</module>
+      <module>ejb-hello-world</module>
+      <module>servlet-hello-world-war</module>
+	  <module>jsp-servlet-hello-world-war</module>
+	  <module>jaxrs-hello-world-war</module>
+	  <module>jsf-hello-world-war</module>
+	  <module>websocket-hello-world-war</module>
+	  <module>security-hello-world-war</module>
+	  <module>webfilter-hello-world-war</module>
+	  <module>jpa-hello-world-ejb</module>
+	  <module>cdi-hello-world-war</module>
+	  <module>concurrency-hello-world-war</module>
+	  <module>jms-hello-world-war</module>
+	  <module>batch-hello-world-war</module>
+	  <module>jaxws-hello-world-war</module>
 	  <module>ear</module>
    </modules>
 
