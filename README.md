@@ -3,67 +3,67 @@ Um projeto simples que visa exercitar os recursos disponíveis no Java EE 7.
 Não é uma solução e não possui regras de negócio. O foco é apenas exercitar o setup da criação do projeto e algumas das funcionalidades disponibilizadas pela especificação.
 
 
-## ejb
+## ejb-hello-world
 Possui implementações de EJB's. Será utilizado por um projeto web cliente, o web-servlet-app.
 
 
-## web-servlet-app
+## servlet-hello-world-war
 Possui servlet's que injetam os ejb's descritos acima. É exercitado o ciclo de vida dos servlet's juntamente com a injeção dos ejb's com a anotação @EJB. O CDI não é utilizado aqui.
 Exemplos de url's para exercitar a execução do projeto:
 
 ```
-http://localhost:8180/web-servlet-app/EjbClient?name=Usuario
-http://localhost:8180/web-servlet-app/FormServlet
+http://localhost:8X80/servlet-hello-world-war/EjbClient?name=Usuario
+http://localhost:8X80/servlet-hello-world-war/FormServlet
 ```
 
-## web-jsp-servlet-app
+## jsp-servlet-hello-world-war
 Possui servlet's com jsp's. É exercitado a convivência entre jsp e servlet, como interagem entre si e se completam durante a execução.
 Exemplos de url's para exercitar a execução do projeto:
 
 ```
-http://localhost:8180/web-jsp-servlet-app/bean_usage.jsp?urlParam=teste
-http://localhost:8180/web-jsp-servlet-app/form.jsp
-http://localhost:8180/web-jsp-servlet-app/jsp_redirect.jsp?nome=Gustavo%20luca%20brandao&idade=123&peso=1111
+http://localhost:8X80/jsp-servlet-hello-world-war/bean_usage.jsp?urlParam=teste
+http://localhost:8X80/jsp-servlet-hello-world-war/form.jsp
+http://localhost:8X80/jsp-servlet-hello-world-war/jsp_redirect.jsp?nome=Gustavo%20luca%20brandao&idade=123&peso=1111
 ```
 
-## rest
+## jaxrs-hello-world-war
 Projeto restfull criado com a implementação RestEasy. Um webapp que expoe alguns endpoint's para exercitar os conceitos do rest.
 Exemplo de url para exercitar a execução do projeto:
 
 ```
-http://localhost:8180/rest/services/hello
+http://localhost:8X80/jaxrs-hello-world-war/services/hello
 ```
 
-## web-jsf-app
+## jsf-hello-world-war
 Uma aplicação para uma festa de aniversário. Utiliza JSF como solução. São exercitados a interação do front com o backend.
 Exemplo de url para exercitar a execução do projeto:
 
 ```
-http://localhost:8180/web-jsf-app/party_index.xhtml
+http://localhost:8X80/jsf-hello-world-war/party_index.xhtml
 ```
 
-## websocket-app
+## websocket-hello-world-war
 Uma aplicação para chat entre clientes. Exercita o funcionamento de websocket's (cliente x servidor)
 Exemplo de url para exercitar a execução do projeto:
 
 ```
-http://localhost:8180/websocket-app/index_chat.html
+http://localhost:8X80/websocket-hello-world-war/index_chat.html
 ```
 
-## webfilter-app
+## webfilter-hello-world-war
 Exercita a execução de webfilters.
 
 URL para ver o resultado da execução de um webfilter:
 ```
-http://localhost:8180/webfilter-app/index.xhtml?shouldApplyFilter=true
+http://localhost:8X80/webfilter-hello-world-war/index.xhtml?shouldApplyFilter=true
 ```
 
 URL onde o webfilter é chamado, porém não atua na resposta:
 ```
-http://localhost:8180/webfilter-app/index.xhtml?shouldApplyFilter=false
+http://localhost:8X80/webfilter-hello-world-war/index.xhtml?shouldApplyFilter=false
 ```
 
-## security-app
+## security-hello-world-war
 Um projeto que exercita o recurso de Declarative Security Model do Java EE 7. 
 Há algumas páginas xhtml com diferentes níveis de acesso. Um login é requerido para acessar as páginas e baseado na permissão do usuário logado a permissão de acesso é concedida ou não.
 
@@ -82,22 +82,22 @@ Orientações:
 URL's disponíveis:
 
 ```
-http://localhost:8180/security-app/index.xhtml
-http://localhost:8180/security-app/admin.xhtml
-http://localhost:8180/security-app/error.xhtml
-http://localhost:8180/security-app/login.xhtml
+http://localhost:8X80/security-hello-world-war/index.xhtml
+http://localhost:8X80/security-hello-world-war/admin.xhtml
+http://localhost:8X80/security-hello-world-war/error.xhtml
+http://localhost:8X80/security-hello-world-war/login.xhtml
 ```
 
 onde cada página requer um tipo de permissão, conforme definido no arquivo web.xml.
 
-## jpa
+## jpa-hello-world-ejb
 Uma simples aplicação que (re)cria as tabelas automaticamente no startup da aplicação e popula com alguns dados default através de um Singleton Session Bean (EJB).
 
 Setup antes de realizar o deploy:
 
 - Ter o mysql instalado 
 - Criar uma base chamada "testejavaee7"
-- Criar o diretório "wildfly-12.0.0.Final\modules\system\layers\base\com\mysql\main" no wildfly e, em seguida:
+- Criar o diretório "wildfly-1X.0.0.Final\modules\system\layers\base\com\mysql\main" no wildfly e, em seguida:
   - Criar o arquivo module.xml com o conteúdo:
     ```
     <?xml version="1.0" encoding="UTF-8"?>
@@ -142,15 +142,15 @@ Setup antes de realizar o deploy:
   ```
   Referência: https://lucasmarques.me/mysql-wildfly-datasource/
 
-## web-cdi-app
+## cdi-hello-world-war
 Um webapp que exercita a injeção de dependências com o CDI.
 
 URL para ver o resultado da execução do projeto:
 ```
-http://localhost:8180/web-cdi-app/GoldilocksServlet
+http://localhost:8X80/cdi-hello-world-war/GoldilocksServlet
 ```
 
-## web-concurrency-api-app
+## concurrency-hello-world-war
 Um webapp que exercita a Concurrency API.
 
 Utiliza um ManagedExecutorService provido pelo container e dispara algumas tasks para submissão.
@@ -176,10 +176,10 @@ O resultado da submissão é exibido no console do servidor de aplicação. Exem
 
 URL para ver o resultado da execução do projeto:
 ```
-http://localhost:8180/web-concurrency-api-app/task
+http://localhost:8X80/concurrency-hello-world-war/task
 ```
 
-## web-jms-ejb-app
+## jms-hello-world-war
 Um webapp para exercitar a especificação JMS (parte de produtor) e EJB (MessageDriven beans).
 
 A partir de uma requisição get a partir de uma servlet, uma mensagem é disparada a uma fila. A mensagem, por sua vez, é consumida por um MessageDriven bean e logada no console. Exemplo:
@@ -207,15 +207,15 @@ standalone.bat -c standalone-full.xml
 
 URL para disparar mensagens:
 ```
-http://localhost:8180/web-jms-ejb-app/producer?message=SUA_MENSAGEM_AQUI
+http://localhost:8X80/jms-hello-world-war/producer?message=SUA_MENSAGEM_AQUI
 ```
 
-## web-batch-app
+## batch-hello-world-war
 Um webapp para exercitar a nova Batch API do Java EE 7.
 
 URL para disparar um novo job:
 ```
-http://localhost:8080/web-batch-app/batch
+http://localhost:8X80/batch-hello-world-war/batch
 ```
 
 Após a requisição, ir verificando no console o progresso do job. Ao final será impressa uma página http com as informações da execução.
