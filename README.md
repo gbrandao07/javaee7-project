@@ -209,13 +209,11 @@ A partir de uma requisição get a partir de uma servlet, uma mensagem é dispar
 As filas e factories JMS devem ser criadas e configuradas no servidor de aplicação.
 Tutorial para o Wildfly: https://gianlucacosta.info/blog/wildfly-jms-tutorial
 
-Dica: caso não queira seguir o tutorial configurando pelo console, é possível executar pela linha de comando:
+Dica sem seguir o tutorial. Configurar pelo console web do wildfly:
 
-- wildfly\bin\jbosscli.bat
-- connect 
-- Criar fila: jms-queue add --queue-address=myQueue --entries=java:/queue/myQueue
-- Criar a factory: /subsystem=messaging-activemq/server=default/connection-factory=MyConnectionFactory:add(entries=[java:/myJmsTest/MyConnectionFactory],connectors=[in-vm])
+- Fila/Tópico: wildfly console web -> subsystem -> messaging -> server -> default -> destination -> view -> JMSQueue/JMSTopic -> Add (caso veja uma mensagem de campo obrigatório dê um "enter" após digitar com o cursos no campo após digitar o valor
 
+- Factory: wildfly console web -> subsystem -> messaging -> server -> default -> connections -> view -> connection factory -> clicar em InVmConnectionFactory -> edit -> entries -> adicionar o nome da factory
 
 Após a configuração ter sido realizada, efetuar o deploy da aplicação no modo standalone-full:
 
@@ -237,3 +235,11 @@ http://localhost:8X80/batch-hello-world-war/batch
 ```
 
 Após a requisição, ir verificando no console o progresso do job. Ao final será impressa uma página http com as informações da execução.
+
+## jaxws-hello-world-war
+Um webapp que expoe um endpoint's soap para exercitar os conceitos do soap webservice.
+Exemplo de url para exercitar a execução do projeto, acessando o wdsl:
+
+```
+http://localhost:8X80/jaxws-hello-world-war/MySOAPEndpoint?wsdl
+```
